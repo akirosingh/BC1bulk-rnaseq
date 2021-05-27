@@ -1,5 +1,5 @@
 patient,sample,condition,accession,cell_line,fq1,fq2,strandedness,libtype
-10160,138-1,il10ifng,none,Tcells,/scratch/users/adamsk/raw_fastq/138-1_S1_L005_R1.fastq.gz,/scratch/users/adamsk/raw_fastq/138-1_S1_L005_R2.fastq.gz,unstranded,pe
-10160,138-2,il10ifng,none,Tcells,/scratch/users/adamsk/raw_fastq/138-2_S2_L005_R1.fastq.gz,/scratch/users/adamsk/raw_fastq/138-2_S2_L005_R2.fastq.gz,unstranded,pe
-10160,138-3,tnfa,none,Tcells,/scratch/users/adamsk/raw_fastq/138-3_S3_L005_R1.fastq.gz,/scratch/users/adamsk/raw_fastq/138-3_S3_L005_R2.fastq.gz,unstranded,pe
-10160,138-4,tnfa,none,Tcells,/scratch/users/adamsk/raw_fastq/138-4_S4_L005_R1.fastq.gz,/scratch/users/adamsk/raw_fastq/138-4_S4_L005_R2.fastq.gz,unstranded,pe
+10160-1,138-1,il10ifng,none,Tcells,/scratch/users/adamsk/raw_fastq/138-1_S1_L005_R1.fastq.gz,/scratch/users/adamsk/raw_fastq/138-1_S1_L005_R2.fastq.gz,unstranded,pe
+10160-2,138-2,il10ifng,none,Tcells,/scratch/users/adamsk/raw_fastq/138-2_S2_L005_R1.fastq.gz,/scratch/users/adamsk/raw_fastq/138-2_S2_L005_R2.fastq.gz,unstranded,pe
+10160-3,138-3,tnfa,none,Tcells,/scratch/users/adamsk/raw_fastq/138-3_S3_L005_R1.fastq.gz,/scratch/users/adamsk/raw_fastq/138-3_S3_L005_R2.fastq.gz,unstranded,pe
+10160-4,138-4,tnfa,none,Tcells,/scratch/users/adamsk/raw_fastq/138-4_S4_L005_R1.fastq.gz,/scratch/users/adamsk/raw_fastq/138-4_S4_L005_R2.fastq.gz,unstranded,pe
