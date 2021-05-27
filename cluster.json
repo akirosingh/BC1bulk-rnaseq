@@ -1,0 +1,47 @@
+{
+    "__default__" :
+    {
+        "account" : "tbencomo",
+        "time" : "01:00:00",
+        "ncpus" : 1,
+        "mem" : "8G",
+        "partition" : "normal",
+        "out" : "/scratch/users/tbencomo/logs/bulk-rnaseq/slurm-{jobid}.out"
+    },
+    "kallisto" :
+    {
+        "time" : "1:00:00",
+        "ncpus" : 4,
+        "mem" : "10G"
+    },
+    "salmon" :
+    {
+        "time" : "2:00:00",
+        "ncpus" : 4,
+        "mem" : "10G"
+    },
+    "deseq2_init" :
+    {
+        "time" : "1:00:00",
+        "npcus" : 4,
+        "mem" : "8G"
+    },
+    "diffexp" :
+    {
+        "time" : "00:30:00",
+        "ncpus" : 2,
+        "mem" : "8G"
+    },
+    "pca" :
+    {
+        "time" : "00:15:00",
+        "ncpus" : 1,
+        "mem" : "8G"
+    },
+    "multiqc" :
+    {
+        "time" : "00:30:00",
+        "ncpus" : 1,
+        "mem" : "2G"
+    }
+} 

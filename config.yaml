@@ -1,0 +1,50 @@
+# CSV file with sample information
+#samples: samples.csv
+samples: metadata.csv
+
+# General Info
+# Specify 'salmon' or 'kallisto'
+quant_program: 'salmon'
+tx2gene: /home/groups/carilee/refs/rnaseq-hg38/kallisto-indexes/homo_sapiens/transcripts_to_genes.txt
+
+# Salmon Info
+salmon_index: /home/groups/carilee/refs/salmon/default/
+
+# Kallisto Info
+kallisto_index: /home/groups/carilee/refs/rnaseq-hg38/kallisto-indexes/homo_sapiens/transcriptome.idx
+kallisto_threads: 4
+
+# NOTE: If you are analyzing single end reads with kallisto these must be defined
+# mean RNA fragment length (not read length). 
+# If you are using Salmon, they will be ignored 
+single_end_frag_length: None
+# standard deviation RNA fragment length
+single_end_frag_sd: None
+
+# Variables to color label PCA plot
+# Comma separated list of columns specified in samples.csv
+pca_labels: condition
+
+# Experimental Design
+# NOTE: Interaction designs currently not supported - use deseq2/all.rds and
+# write a script to run interaction design
+# If you want to regress out patient specific affects, make sure the patient
+# variable is a character variable instead of a numeric type to avoid improper
+# coding. This can be done by ensuring the patient variable values have text and 
+# numbers
+design_formula: ~ condition
+
+# Contrasts for DESeq2 to estimate
+# These must be for the last (right most) variable in the design_formula
+# The specification is numerator-vs-denominator
+# Thus if you wanted to compare treated vs untreated samples with untreated
+# as the reference level, it would be treated-vs-untreated
+contrasts:
+    tumor-vs-normal:
+        - tumor
+        - normal
+# Factor level ordering for relevant variables in the design formula
+# The first value will be the reference level
+factor_levels:
+    condition: normal, tumor
+
