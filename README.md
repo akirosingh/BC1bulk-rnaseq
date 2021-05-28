@@ -5,6 +5,13 @@ to normalize counts and detect DEGs.
 
 ## Installation
 1. Install Anaconda or Miniconda and then `conda install snakemake`
+ interactive Sherlock session:
+ ```
+ sdev
+ ml python/3.9.0
+ pip3 install --user snakemake
+ pip3 install --user mamba
+ ```
 2. Download the appropriate [`kallisto`](https://github.com/pachterlab/kallisto-transcriptome-indices/releases) or  [`salmon`](http://refgenomes.databio.org) references or build your own
 3. Clone the repository
 4. Describe your samples in `samples.csv`
